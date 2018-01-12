@@ -40,12 +40,12 @@ Servicio Login
 2. Ejecutar el script “script_loga2” (angular2-proy/servicios_angular_2/Servicio Login/loga2) usando la base de datos login.
 3. Copiar el archivo “APIRestA” en el escritorio (/angular2-proy/servicios_angular_2/Servicio Login/APIRestA).
 4. Abrir la carpeta desde el terminal (click derecho -> abrir desde el terminal) y ejecutar el comando ‘node server.js’ sin comillas simples.
-5. Si se requiere configurar algunos datos para arrancar el servicio (puerto, contrasenia, usuario, etc)  puede configurar el archivo “connectionIf.js” que esta dentro la carpeta “APIRestM” (/APIRestA/app/connection/connectionIf.js).
+5. Si se requiere configurar algunos datos para arrancar el servicio (puerto, contrasenia, usuario, etc)  puede configurar el archivo “connectionIf.js” que esta dentro la carpeta “APIRestA” (/APIRestA/app/connection/connectionIf.js).
 
 Servicio Reservas
 
 1. Crear un base de datos en un entorno postgres llamada “reservas”.
-2. Restaurar la base de datos “bd_mascotas” (angular2-proy/servicios_angular_2/Servicio Mascotas/bd_mascotas) usando la base de datos db_mascotas.
-3. Copiar el archivo “APIRestA” en el escritorio (/angular2-proy/servicios_angular_2/Servicio Mascotas/APIRestA).
+2. Restaurar la base de datos “reservas” (angular2-proy/servicios_angular_2/Servicio Reservas/reservas) usando la base de datos reservas.
+3. Copiar el archivo “APIRestA” en el escritorio (/angular2-proy/servicios_angular_2/Servicio Reservas/APIRestA).
 4. Abrir la carpeta desde el terminal (click derecho -> abrir desde el terminal) y ejecutar el comando ‘node server.js’ sin comillas simples.
 5. Si se requiere configurar algunos datos para arrancar el servicio (puerto, contrasenia, usuario, etc)  puede configurar el archivo “connectionIf.js” que esta dentro la carpeta “APIRestA” (/APIRestA/app/connection/connectionIf.js).

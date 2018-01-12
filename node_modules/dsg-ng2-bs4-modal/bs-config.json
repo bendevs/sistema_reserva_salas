@@ -1,0 +1,7 @@
+{
+    "server": {
+        "routes": {
+            "/ng2-bs4-modal": "./"
+        }
+    }
+}
