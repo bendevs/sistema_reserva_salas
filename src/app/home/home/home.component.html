@@ -1,0 +1,81 @@
+
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+
+
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="assets/img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Administrador</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Contacts</a></li>
+                            <li><a href="">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+
+                <!--*********************USUARIOS**************************** -->
+                <li class="active">
+                    <a><i class="fa fa-cogs"></i> <span class="nav-label">Usuarios</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a [routerLink]="['/home', {outlets: {firstchild: ['usuarios']}}]">Usuarios</a></li>
+                    </ul>
+                </li>
+                <!--****************************************************** -->
+
+                <!--**********************SALAS*************************** -->
+                <li class="active">
+                    <a><i class="fa fa-cogs"></i> <span class="nav-label">Salas</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a [routerLink]="['/home', {outlets: {firstchild: ['parametros']}}]">Salas</a></li>
+                    </ul>
+                </li>
+                <!--****************************************************** -->
+
+                <!--li class="active">
+                    <a><i class="fa fa-cogs"></i> <span class="nav-label">Parametros</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a [routerLink]="['/home', {outlets: {firstchild: ['parametros']}}]">Parametros</a></li>
+                    </ul>
+                </li-->
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary "><i class="fa fa-bars"></i> </a>
+        </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a routerLink="/login" routerLinkActive="active">
+                            <i class="fa fa-sign-out"></i> Salir
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInDown">
+        
+            <div class="row">
+                <router-outlet name="firstchild"></router-outlet>
+            </div>      
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<!--p>parametros works!</p-->
+<div class="container-fluid">
+  <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+    <div [hidden]="submitted">
+      <h3>Usuarios </h3>
+      <!--form >
+        <div class="form-group">
+          <label class="col-sm-1 control-label">Usuario: </label>
+          <div class="col-sm-3">
+            <input type="text" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" class="form-control" id="descripcion"#descripcion placeholder="Ingrese parametro" #refrence
+            required/>
+          </div>
+          <button type="submit" class="btn btn-success" (click) = 'buscarDatosCatalogo(descripcion.value)'>Buscar</button>
+          <a class="btn btn-danger" (click)="refrence.value=''">
+            Limpiar
+          </a>   
+        </div>
+      </form-->
+    </div>
+    <!-- ====================================================  -->
+    <div>
+      <form>
+       <!-- ... all of the form ... -->
+     </form>
+   </div>
+
+   <!-- ====================================================  -->
+   <div class="col-md-12">
+    <div class="form-group">
+      <ng2-smart-table
+      [settings]="settings"
+      [source]="source"
+      (deleteConfirm)="onDeleteConfirm($event)"
+      (editConfirm)="onSaveConfirm($event)"
+      (createConfirm)="onCreateConfirm($event)">
+    </ng2-smart-table>
+  </div>
+</div>
+</div>
+</div>
